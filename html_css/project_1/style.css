@@ -1,14 +1,57 @@
+@font-face {
+  font-family: 'AdiHaus';
+  src: URL('https://assets.codepen.io/6060109/adihaus_regular.ttf')
+    format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AdiHaus';
+  src: url('https://assets.codepen.io/6060109/adihaus_bold.ttf')
+    format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-header {
-  display: flex;
-  justify-content: center;
+body,
+html {
+  min-width: 100%;
+  min-height: 100vh;
 }
 
 header .logo {
-  margin-top: 2rem;
+  display: block;
+  margin: 2rem auto;
+}
+
+.promo {
+  background-image: url('images/woman_photo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  background-position: top;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: 'Adihaus';
+  font-weight: normal;
+  color: #cd3a24;
+  margin: 2rem auto;
+  font-size: 42px;
+  text-align: center;
+  width: 50%;
+}
+
+.headline-two {
+  color: #423a3a;
+  font-weight: bold;
 }

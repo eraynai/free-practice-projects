@@ -25,6 +25,7 @@ html {
   min-width: 100%;
   min-height: 100vh;
   font-family: 'Adihaus';
+  background-image: url('https://assets.codepen.io/6060109/waves.png');
 }
 
 .all-content-container {
@@ -38,18 +39,18 @@ html {
 }
 
 .promo {
-  background-image: url('images/woman_photo.png');
+  background-image: url('https://assets.codepen.io/6060109/mobile-shoes.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 200px;
+  height: 500px;
   background-position: top;
 }
 
 h2 {
   text-transform: uppercase;
   font-weight: normal;
-  color: #cd3a24;
+  color: #2f80ed;
   letter-spacing: 5px;
   font-size: 3rem;
   margin: 2rem auto;
@@ -88,11 +89,15 @@ input[type='submit'] {
   width: 25%;
   height: 40px;
   color: white;
-  background-color: black;
+  background: linear-gradient(
+    90deg,
+    rgba(124, 124, 124, 1) 0%,
+    rgba(43, 40, 40, 1) 100%
+  );
   border: none;
   border-radius: 3px;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 2.2rem;
 }
 
 .image-full {
@@ -114,12 +119,10 @@ input[type='submit'] {
   }
 
   .image-full {
-    display: inline;
-  }
-
-  .promo-wide {
-    height: 100vh;
-    clip-path: polygon(0 0, 100% 0%, 100% 100%, 47% 100%);
+    display: block;
+    width: 50%;
+    background-image: url('https://assets.codepen.io/6060109/shoes.png');
+    background-size: cover;
   }
 
   .all-content-container {
@@ -132,5 +135,8 @@ input[type='submit'] {
   }
   .logo {
     margin: 0;
+  }
+  h2 {
+    font-size: 64px;
   }
 }

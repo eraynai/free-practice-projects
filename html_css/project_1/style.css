@@ -24,6 +24,7 @@ body,
 html {
   min-width: 100%;
   min-height: 100vh;
+  font-family: 'Adihaus';
 }
 
 header .logo {
@@ -40,18 +41,51 @@ header .logo {
   background-position: top;
 }
 
-h1 {
+h2 {
   text-transform: uppercase;
-  font-family: 'Adihaus';
   font-weight: normal;
   color: #cd3a24;
+  letter-spacing: 5px;
+  font-size: 3rem;
   margin: 2rem auto;
-  font-size: 42px;
-  text-align: center;
-  width: 50%;
 }
 
 .headline-two {
   color: #423a3a;
   font-weight: bold;
+}
+
+.text-content-container {
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+}
+
+.text-content-container p {
+  font-size: 1rem;
+  line-height: 28px;
+}
+
+form {
+  display: flex;
+  margin-top: 2rem;
+}
+
+input[type='text'] {
+  width: 75%;
+  height: 40px;
+  font-size: 14px;
+  border-radius: 3px;
+  padding: 0 20px;
+}
+
+input[type='submit'] {
+  width: 25%;
+  height: 40px;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 16px;
 }

@@ -27,7 +27,12 @@ html {
   font-family: 'Adihaus';
 }
 
-header .logo {
+.all-content-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.logo {
   display: block;
   margin: 2rem auto;
 }
@@ -88,4 +93,44 @@ input[type='submit'] {
   border-radius: 3px;
   font-weight: 700;
   font-size: 16px;
+}
+
+.image-full {
+  display: none;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .promo {
+    display: none;
+  }
+  .container-full {
+    display: flex;
+  }
+
+  .content-full {
+    width: 50%;
+    height: 100vh;
+  }
+
+  .image-full {
+    display: inline;
+  }
+
+  .promo-wide {
+    height: 100vh;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 47% 100%);
+  }
+
+  .all-content-container {
+    height: 100vh;
+    max-width: 1600px;
+  }
+
+  .text-content-container {
+    text-align: left;
+  }
+  .logo {
+    margin: 0;
+  }
 }

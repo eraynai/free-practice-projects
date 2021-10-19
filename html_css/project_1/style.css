@@ -29,7 +29,6 @@ html {
 }
 
 .all-content-container {
-  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -63,8 +62,10 @@ h2 {
 
 .text-content-container {
   width: 100%;
+  max-width: 500px;
   padding: 2rem;
   text-align: center;
+  margin: 1.5rem auto;
 }
 
 .text-content-container p {
@@ -127,7 +128,6 @@ input[type='submit'] {
 
   .all-content-container {
     height: 100vh;
-    max-width: 1600px;
   }
 
   .text-content-container {
